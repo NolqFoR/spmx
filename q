@@ -116,20 +116,20 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Runes"):WaitForChild("Rune2"):FireServer(unpack(args))
 end)
 
-Section:NewToggle("auto egg 1", "Make your player auto click", function(v)
+Section:NewToggle("Auto Rune 2", "Make your player auto click", function(v)
     getgenv().E1 = v
       while getgenv().E1 == true do
 local args = {
     [1] = false
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Runes"):WaitForChild("Rune1"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Runes"):WaitForChild("Rune2"):FireServer(unpack(args))
 
 game:GetService("RunService").Heartbeat:wait();
   end
    end)
 
-Section:NewToggle("auto egg 1 sec", "Make your player auto click", function(v)
+Section:NewToggle("Auto Rune 1 sec", "Make your player auto click", function(v)
     getgenv().S1 = v
       while getgenv().S1 == true do
 local args = {
@@ -141,7 +141,7 @@ game:GetService("RunService").Heartbeat:wait();
   end
    end) 
 
-Section:NewToggle("auto egg 1 secerte", "Make your player auto click", function(v)
+Section:NewToggle("Auto Rune 1 secret", "Make your player auto click", function(v)
     getgenv().Se1 = v
       while getgenv().Se1 == true do 
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Runes"):WaitForChild("SecretRune"):FireServer()
